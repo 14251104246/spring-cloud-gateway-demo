@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/gateway-service-zuul-eureka/gateway-service-zuul-eureka.iml" filepath="$PROJECT_DIR$/gateway-service-zuul-eureka/gateway-service-zuul-eureka.iml" />
-      <module fileurl="file://$PROJECT_DIR$/gateway-service-zuul-simple/gateway-service-zuul-simple.iml" filepath="$PROJECT_DIR$/gateway-service-zuul-simple/gateway-service-zuul-simple.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-cloud-eureka/spring-cloud-eureka.iml" filepath="$PROJECT_DIR$/spring-cloud-eureka/spring-cloud-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-gateway/spring-cloud-gateway.iml" filepath="$PROJECT_DIR$/spring-cloud-gateway/spring-cloud-gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-cloud-parent.iml" filepath="$PROJECT_DIR$/spring-cloud-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-cloud-producer/spring-cloud-producer.iml" filepath="$PROJECT_DIR$/spring-cloud-producer/spring-cloud-producer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-cloud-producer-2/spring-cloud-producer-2.iml" filepath="$PROJECT_DIR$/spring-cloud-producer-2/spring-cloud-producer-2.iml" />
     </modules>
   </component>
 </project>

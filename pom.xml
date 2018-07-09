@@ -5,18 +5,17 @@
     <modelVersion>4.0.0</modelVersion>
 	<groupId>com.neo</groupId>
 	<artifactId>spring-cloud-parent</artifactId>
-	<version>1.0.0.BUILD-SNAPSHOT</version>
+	<version>1.0.1.BUILD-SNAPSHOT</version>
 
 	<modules>
-		<module>gateway-service-zuul-eureka</module>
-		<module>gateway-service-zuul-simple</module>
+		<module>spring-cloud-gateway</module>
 		<module>spring-cloud-eureka</module>
 		<module>spring-cloud-producer</module>
-		<module>spring-cloud-producer-2</module>
+
 	</modules>
 
 	<packaging>pom</packaging>
-	<name>Spring cloud zuul</name>
+	<name>Spring-cloud-gateway-demo</name>
 	<description>Demo project for Spring Boot</description>
 
     <parent>

@@ -2,10 +2,8 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/gateway-service-zuul-eureka" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/gateway-service-zuul-simple" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-cloud-eureka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-cloud-gateway" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-cloud-producer" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring-cloud-producer-2" charset="UTF-8" />
   </component>
 </project>
