@@ -68,13 +68,20 @@ spring:
         filters:
         - StripPrefix=1
 ```
+- 如果你想关闭gateway，可以使用配置`spring.cloud.gateway.enabled=false`
 
 #### 测试
-- 测试路由到百度页面：http://localhost:8888/baidu
-
-- 测试路由到路由到本机上的9000端口（示例子项目`spring-cloud-producer`）：http://localhost:8888/producer/hello?name=1
-
-- 测试路由到（示例子项目`spring-cloud-producer`）：http://localhost:8888/producerInEureka/hello?name=1
+- 有效性测试
+    - 测试路由到百度页面：http://localhost:8888/baidu
+    
+    - 测试路由到路由到本机上的9000端口（示例子项目`spring-cloud-producer`）：http://localhost:8888/producer/hello?name=1
+    
+    - 测试路由到（示例子项目`spring-cloud-producer`）：http://localhost:8888/producerInEureka/hello?name=1
+- 压力测试
+    - 1000个并发请求测试耗时： 8~11秒
+    - 结果如图
+    
+    > ![image.png](https://upload-images.jianshu.io/upload_images/7176877-49f6901ff1bdf8fd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 #### 参考
 - http://cloud.spring.io/spring-cloud-static/spring-cloud-gateway/2.0.0.RELEASE/single/spring-cloud-gateway.html
