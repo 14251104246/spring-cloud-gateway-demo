@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 
 import static org.springframework.web.reactive.function.server.RequestPredicates.path;
 
-@Configuration
+
 @SpringBootApplication
 public class GatewayApplication {
 
