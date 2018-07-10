@@ -1,0 +1,24 @@
+spring.application.name: spring-cloud-gateway
+server.port: 8888
+
+eureka.client.serviceUrl.defaultZone: http://localhost:8000/eureka/
+
+# 网关配置
+spring:
+  cloud:
+    gateway:
+      routes:
+        # hello route
+      - id: hello_route
+        uri: http://localhost:9000
+        predicates:
+        - Path=/producer/**
+        filters:
+        - StripPrefix=1
+        # baidu route
+      - id: websocket_route
+        uri: http://www.baidu.com
+        predicates:
+        - Path=/baidu/**
+        filters:
+        - StripPrefix=1
