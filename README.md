@@ -82,7 +82,14 @@ spring:
     - 结果如图
     
     > ![image.png](https://upload-images.jianshu.io/upload_images/7176877-49f6901ff1bdf8fd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+    
+    - 而zuul会在1000个线程并发请求下会出现错误（部分请求返回`500`）,但速度更快，耗时：6~8秒
+    - 结果如图
+     
+    > ![image.png](https://upload-images.jianshu.io/upload_images/7176877-afafeb796b6f9b70.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
+    > ![image.png](https://upload-images.jianshu.io/upload_images/7176877-f17809badf652633.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+    
 #### 参考
 - http://cloud.spring.io/spring-cloud-static/spring-cloud-gateway/2.0.0.RELEASE/single/spring-cloud-gateway.html
 - http://cloud.spring.io/spring-cloud-static/spring-cloud-gateway/1.0.2.RELEASE/single/spring-cloud-gateway.html
