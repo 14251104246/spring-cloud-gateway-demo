@@ -8,24 +8,31 @@ spring:
   cloud:
     gateway:
       routes:
-        # 路由到示例项目的spring-cloud-producer模块
-      - id: hello_route
-        uri: http://localhost:9000
-        predicates:
-        - Path=/producer/**
-        filters:
-        - StripPrefix=1
-        # 集成eureka注册中心的配置示例
-      - id: hello_ribbon_route
-        uri: lb://spring-cloud-producer
-        predicates:
-        - Path=/producerInEureka/**
-        filters:
-        - StripPrefix=1
-        # 路由到百度页面
-      - id: baidu_route
+        # 匹配指定路径的路由
+      - id: path_route
         uri: http://www.baidu.com
         predicates:
         - Path=/baidu/**
         filters:
         - StripPrefix=1
+        # 匹配指定cookie的路由
+      - id: cookie_route
+        uri: http://www.taobao.com
+        predicates:
+        - Cookie=chocolate, value
+        # 匹配指定请求头的路由
+      - id: header_route
+        uri: http://www.jd.com/
+        predicates:
+        - Header=X-Request-Id, \d+
+        # 匹配指定请求参数的路由
+      - id: param_route
+        uri: http://tmall.com/
+        predicates:
+        - Query=param1,value
+        # 匹配指定请求参数和请求头的路由
+      - id: compose_route
+        uri: http://www.oschina.net/
+        predicates:
+        - Query=param2
+        - Header=Header-Route,value
